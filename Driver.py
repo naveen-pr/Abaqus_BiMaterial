@@ -2,13 +2,13 @@
 Written by Naveen Prakash
 """
 
-mat2_thk = [0.5, 0.54, 0.58, 0.62, 0.66, 0.7, 0.74, 0.78, 0.82, 0.86, 0.9]
-mat2_E   = [65e3, 70e3, 75e3, 80e3, 85e3, 90e3, 95e3, 100e3, 105e3]
-
 from tempfile import mkstemp
 from shutil import move, copymode
 from os import fdopen, remove
 from subprocess import check_output
+
+mat2_thk = [0.5, 0.54, 0.58, 0.62, 0.66, 0.7, 0.74, 0.78, 0.82, 0.86, 0.9]
+mat2_E   = [65e3, 70e3, 75e3, 80e3, 85e3, 90e3, 95e3, 100e3, 105e3]
 
 def replace(file_path, pattern, subst):
     #Create temp file
